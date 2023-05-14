@@ -1,0 +1,243 @@
+%% Old style latex (latex209) form for EPSRC grant proposal evaluation
+%% Aaron Sloman 5 Sep 1998
+%% Updated to include "research adventure" question: 28 Jun 1999
+%% Suggestion for "ticks" from Mike Paterson, Warwick University
+%% Suggestions for improvement or correction welcome.
+%% Email A.Sloman@cs.bham.ac.uk
+%%
+%% NB before filling this in you are advised to run it through latex
+%% and preview it, to see what you are aiming at. Of course, some
+%% sections will expand after you have written comments.
+%%
+
+\documentstyle[times]{article}
+\pagestyle{empty}
+\setlength{\textwidth}{17.5cm}
+\setlength{\textheight}{26.5cm}
+\setlength{\oddsidemargin}{-0.7cm}
+\setlength{\evensidemargin}{-0.7cm}
+\setlength{\topmargin}{-1.5cm}
+\setlength{\headheight}{0cm}
+\setlength{\headsep}{0cm}
+\def\RULE{\vspace*{1mm}\hrule\vspace*{2mm}}
+%
+%% To get a "tick" in a box on page 1, use "\tick"
+\def\tick{\raisebox{-1.5ex}{\Large\quad\quad$\surd$}}
+%
+% different numbers of new lines
+\def\NL{\newline}
+\def\NLL{\newline \newline}             %not needed
+\def\NLLL{\newline \newline \newline}   %not needed
+\def\NLLLL{\newline \newline \newline \newline}
+%
+% vertical space
+\def\VS{\vspace*{3mm}}
+% Shorter vertical space
+\def\vs{\vspace*{1mm}}
+%
+% Subsection start
+\def\SUB{\VS \large \bf}
+%
+% This is where printable stuff starts
+\begin{document}
+\parindent 0cm
+\parskip 2mm
+
+{\bf
+THIS FORM MAY BE PHOTOCOPIED AND PASSED (UNATTRIBUTED) TO THE
+INVESTIGATOR}
+
+
+\begin{tabbing}
+%
+%% Ignore the next line, used to set spacing
+Grant Reference:  \= GR/ \hspace*{4cm} \= Project Title: \hspace*{0.5cm} \= XXXXXX \= \kill
+%
+%% Fill in first block of XXXX with reference. Second and third with
+%% project title (add extra lines if necessary)
+Grant Reference: \> GR/XXXX
+                        \> Project Title: \> XXXX
+\\
+                  \>    \>  \> XXXX \\ %%duplicate or delete this line as needed
+\\
+A1.1 \\
+%
+%% fill in date (DDDD) and name of proposer (NNNN)
+Please return form by: DDDD \> \> Investigator: \> \> NNNN \\
+%
+%% Name and address of EPSRC official, and Proposer's institution
+To: XXXXX  \> \> Institution/Organisation:  \> \> XXXXX \\
+IT \& COMPUTER SCIENCE PROGRAMME \> \> \>  \\ %institution can overflow
+\>  \> Referee reference number: \> \> XXXX
+\end{tabbing}
+\RULE
+
+%% See the detailed advice/prompts on official printed form.
+{\bf RATING SUMMARY:}  Please ensure that the box markings given below
+are consistent with your narrative comments overleaf. EPSRC recommends
+that you complete the narrative section overleaf before undertaking the
+summary.
+
+%% Rating boxes follow.
+%% Percentage under each heading provides a guide to the total
+%% number of proposal expected in that category
+
+%% Enter an assessment for each of the criteria by inserting
+%% "\tick" after the appropriate "&" in the table.
+%% Or do it by hand with a tick on a printed copy.
+%
+%% Entries in the "confidence" column should use H=high, M=medium or
+%% L= low.
+
+{\small
+\begin{tabular}{||p{2.0cm}||p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}||p{1.8cm}||}
+\hline
+{\normalsize \bf Assessment \NLLLL Criterion}
+            & Unsatisfactory \NL
+              (20\%)
+                & Modest contribution/ ability \NL
+                  (30\%)
+                    & Nationally  competitive \NL
+                      (25\%)
+                        & Nationally leading and \NL internationally competitive \NL
+                          (20\%)
+                            & Internationally leading \NL
+                              (5\%)
+                                    &  { Confidence level H/M/L} \\
+\hline
+Scientific \& \NL Technological Quality
+%
+%% insert \tick after the appropriate one of the first 5 ampersands,
+%% and ~~~H or ~~~M or ~~~L after the last one. Or make ticks on paper
+%% version after printing.
+% Example
+%           &   &\tick   &   &   &       &  ~~H \\
+%
+            &   &   &   &   &       &  \\
+\hline
+Ability to \NL undertake the \NL research
+%
+%% insert \tick after the appropriate one of the first 5 ampersands,
+%% and ~~~H or ~~~M or ~~~L after the last one. Or write on printed copy.
+%
+            &   &   &   &   &       & \\
+\hline
+\end{tabular}
+} %end \small
+
+{\small
+\begin{tabular}{||p{2cm}||p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}||p{1.8cm}||}
+\hline
+        & Unsatisfactory (20\%)
+            & Satisfactory (30\%)
+                & Good (25\%)
+                    & Excellent (20\%)
+                        & Outstanding (5\%)
+                                &Confidence level H/M/L\\
+\hline
+Viability \& \NL planning
+%% insert \tick after the appropriate one of the first 5 ampersands,
+%% and ~~~H or ~~~M or ~~~L after the last one. Or write on printed copy.
+        &   &   &   &   &       &  \\
+\hline
+Relevance to \NL beneficiaries
+        &   &   &   &   &       &  \\
+\hline
+Resources \& \NL cost effectiveness
+        &   &   &   &   &       &  \\
+\hline
+\end{tabular}
+} %end \small
+
+%% turning off right-justification from here on seems to improve
+%% layout
+\raggedright
+
+{\bf
+ADDITIONAL COMMENTS:   please  use this space to note any additional
+issues e.g. multi-disciplinarity, potential project risks. We would be
+interested in any suggestions you may have for improving the project.}
+%
+%% If desired, increase size of font from here on by uncommenting this:
+% \large
+%% Then you can fill the space available in fewer words.
+
+
+\vfill %next bit at bottom of page
+{\sc Data
+Protection Act: Data from this form will be held on a confidential
+computer database.}
+\newpage
+%% If desired, increase size of font from here on by uncommenting this:
+%% \large
+
+{\normalsize\bf
+THIS FORM MAY BE PHOTOCOPIED AND PASSED (UNATTRIBUTED) TO THE
+INVESTIGATOR\\
+\hspace*{2cm}PLEASE PROVIDE A FULL EXPLANATION IN SUPPORT OF YOUR VIEWS}
+
+%% Uncomment some of the prompts if inclusion of their text is desired.
+{\SUB
+1.  SCIENTIFIC \& TECHNOLOGICAL QUALITY}\\
+%% Give your opinion on likely scientific and technological quality
+%% of this proposal, i.e. on the nature of the research area, its
+%% novelty, the contribution that this research would make and its
+%% competitiveness in relation to other work in the field, both in
+%% the UK and internationally.
+
+
+{\SUB
+2.  ABILITY  TO UNDERTAKE  THE RESEARCH}\\
+%% What are your views on the ability of the investigator/ project team
+%% to undertake this research project?}
+
+{\SUB
+3.  VIABILITY  AND  PLANNING}\\
+%% Please comment on the viability of the proposed methods and
+%% techniques and on the suitability of the research infrastructure
+%% Please also indicate whether the project objectives, timescales
+%% and plans are realistic.
+
+%%delete these sub-headings if unwanted.
+{\bf Viability of methods and techniques:}\\
+
+{\bf Suitability of research infrastructure:}\\
+
+{\bf Are objectives realistic:}\\
+
+{\bf Are timescales and plans realistic:}\\
+
+{\SUB
+4.  RELEVANCE TO BENEFICIARIES}\\
+%% Please comment on the beneficiaries identified by the proposer.
+%% How important is this research likely to be to them or to others?
+
+
+\vs
+{\sc Please comment on any specific collaborations and/or on suggestions
+for exploitation and dissemination.}
+
+{\SUB
+5.  RESOURCES AND COST EFFECTIVENESS}\\
+%% Comment on the choice of, and need for, the resources requested,
+%% paying particular attention to staff, major capital and facilities.
+
+
+\vs
+{\sc Please give your opinion on the overall cost effectiveness of the
+work.}
+
+{\SUB
+6.  ADVENTURE IN RESEARCH}\\
+%%  EPSRC wishes to encourage ``adventure in research'' subject to
+%% the requirement of high quality. You are invited to comment on the
+%% degree of adventure in the proposal -- the balance between research
+%% risk and potential to make major advances in the field.
+
+
+\vs
+{\sc Provide comments on the element of adventure in the proposal,
+and the balance between risk and potential.}
+
+
+\end{document}
